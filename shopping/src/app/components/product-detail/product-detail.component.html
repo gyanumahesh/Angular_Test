@@ -1,0 +1,15 @@
+<div class="row mt-4 px-5">
+  <div class="col-3">
+    <img src="{{ productDetail?.image }}" width="100" />
+  </div>
+  <div class="col-4">
+    <p>{{ productDetail?.title }}</p>
+    <button type="button" class="btn btn-success" (click)="AddToCart()">
+      Add To Cart
+    </button>
+  </div>
+  <div class="col-5">
+    <label class="text-bold">Cart Items:</label><span class="ml-2">{{ addItems }}</span>
+    <i class="fa-solid fa-cart-shopping"></i>
+  </div>
+</div>
